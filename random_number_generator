@@ -1,0 +1,17 @@
+
+print("               Random number generator:")
+print("******************************************************************")
+
+import random
+
+while(1):
+
+  exit = int(input("Enter -1 to exit the program or enter 1 to continue the program:"))
+  if exit == -1:
+    break
+  else:
+    print(f"The random number between 1 to 100 is ",random.randint(1,100))
+    print(f"The random number between 1 to 200 is ",random.randint(1,200))
+    print(f"The random number between 1 to 300 is ",random.randint(1,300))
+    print(f"The random number between 1 to 1000 is ",random.randint(1,1000))
+
