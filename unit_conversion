@@ -1,0 +1,47 @@
+print("\t\tUnit Convertion Program")
+print("\t\t*************************************************************")
+print("\tEnter 1 for Miles to Kilometer conversion")
+print("\tEnter 2 for Feet to Inches conversion")
+print("\tEnter 3 for Farenheit to Celcius conversion")
+print("\tEnter 4 for Centimeters to Meters conversion")
+print("\tEnter -1 to EXIT program \n")
+
+
+ask_user = int(input(" "))
+
+while(1):
+
+  if ask_user == -1:
+    print("Exiting the program ...")
+    break
+
+  if ask_user == 1:
+  
+    num1 = float(input("Enter the number of miles you would like to convert into kilometers:"))
+
+    print(f"The number in in kilometers is", num1 * 1.60934)
+    
+    break
+
+  if ask_user == 2:
+  
+    num2 = float(input("Enter the number of feet you would like to convert into inches:"))
+  
+    print(f"The number in in inches is", num2 * 12)
+    
+    break
+
+  if ask_user == 3:
+  
+    num3 = float(input("Enter the temperature in farenhiet you would like to convert into celcius:"))
+  
+    print(f"The number in in inches is", (num3 - 32) * 5/9)
+    break
+  
+  if ask_user == 4:
+    
+    num4 = float(input("Enter the number of centimeters you would like to convert into meters:"))
+
+    print(f"The number in in meters is", num4 * 0.01)
+    
+    break
