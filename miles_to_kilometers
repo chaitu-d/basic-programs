@@ -1,0 +1,6 @@
+print("             Miles to kilometers converter")
+print("*************************************************************************")
+
+num1 = float(input("Enter the number of miles you would like to convert into kilometers:"))
+
+print(f"The number in in kilometers is", num1 * 1.60934)
