@@ -4,6 +4,12 @@ print("\tEnter 1 for Miles to Kilometer conversion")
 print("\tEnter 2 for Feet to Inches conversion")
 print("\tEnter 3 for Farenheit to Celcius conversion")
 print("\tEnter 4 for Centimeters to Meters conversion")
+print("\tEnter 5 for Grams to Kilograms conversion")
+print("\tEnter 6 for Centimeters to inches conversion")
+print("\tEnter 7 for yards to inches conversion")
+print("\tEnter 8 for centimeters to millimeters conversion")
+print("\tEnter 9 for light years to miles conversion")
+print("\tEnter 10 for months to weeks conversion")
 print("\tEnter -1 to EXIT program \n")
 
 
@@ -35,7 +41,7 @@ while(1):
   
     num3 = float(input("Enter the temperature in farenhiet you would like to convert into celcius:"))
   
-    print(f"The number in in inches is", (num3 - 32) * 5/9)
+    print(f"The number in celcius is", (num3 - 32) * 5/9)
     break
   
   if ask_user == 4:
@@ -43,5 +49,29 @@ while(1):
     num4 = float(input("Enter the number of centimeters you would like to convert into meters:"))
 
     print(f"The number in in meters is", num4 * 0.01)
+  
+  if ask_user == 5:
     
+    num5 = float(input("Enter the number of grams you would like to convert into kilograms:"))
+    print(f"The number in in meters is", num5 * 1000.00)
+
+  if ask_user == 6:
+    num6 = float(input("Enter the number of centimeters you would like to convert into inches:"))
+    print(f"The number in in meters is", num6 * 0.393701)
+  
+  if ask_user == 7:
+    num7 = float(input("Enter the number of inches you would like to convert into yards:"))
+    print(f"The number in in yards is", num7 * 0.0277778) 
+
+  if ask_user == 8:
+    num8 = float(input("Enter the number of centimeters you would like to convert into millimeters:"))
+    print(f"The number in in millimeters is", num8 * 10)     
+   
+  if ask_user == 9:
+    num9 = float(input("Enter the number of light years you would like to convert into miles:"))
+    print(f"The number in in miles is", num9 * 5.879e+12) 
+ 
+  if ask_user == 10:
+    num10 = float(input("Enter the number of months you would like to convert into weeks:"))
+    print(f"The number in in weeks is", num10 * 4)    
     break
